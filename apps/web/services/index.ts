@@ -5,7 +5,7 @@ export const createEnvUrl = (
 	env: "development" | "production" | "test" | "staging",
 ) => {
 	if (["development", "test", "staging"].some((x) => x === env)) {
-		return "webhook-test/send-notify";
+		return "webhook/send-notify";
 	}
 	return "webhook/send-notify";
 };
