@@ -24,6 +24,7 @@ export const sendEmailNotification = async (data: ApiFormData) => {
 					referralTrackingPageUrl: `${process.env.NEXT_PUBLIC_VERCEL_URL}/app/referrals`,
 				},
 			},
+			credentials: "include",
 		},
 	);
 
